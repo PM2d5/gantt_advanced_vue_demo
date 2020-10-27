@@ -1,0 +1,195 @@
+{
+    "success"  : true,
+    "resources": {
+        "rows": [
+            {"id": "r1", "name": "Red"},
+            {"id": "r2", "name": "Pink"},
+            {"id": "r3", "name": "Purple"},
+            {"id": "r4", "name": "Violet"},
+            {"id": "r5", "name": "Indigo"},
+            {"id": "r6", "name": "Blue"},
+            {"id": "r7", "name": "Cyan"},
+            {"id": "r8", "name": "Teal"},
+            {"id": "r9", "name": "Green"},
+            {"id": "r10", "name": "Lime"},
+            {"id": "r11", "name": "Yellow"},
+            {"id": "r12", "name": "Orange"}
+        ]
+    },
+    "events"   : {
+        "rows": [
+            {
+                "resourceId": "r1",
+                "startDate" : "2017-01-01T10:00:00",
+                "endDate"   : "2017-01-01T12:00:00",
+                "eventStyle": "plain",
+                "eventColor" : "red",
+                "num": 10,
+                "object": {
+                    "2017-01-01 10:00":100,
+                    "2017-01-01 11:00":200
+                },
+                "draggable":false,
+                "resizable":false
+            },
+            {
+                "resourceId": "r2",
+                "startDate" : "2017-01-01T12:00:00",
+                "endDate"   : "2017-01-01T13:00:00",
+                "eventStyle": "border",
+                "eventColor" : "pink",
+                "num": 10,
+                "object": {
+                    "2017-01-01 12:00":100
+                }
+            },
+            {
+                "resourceId": "r3",
+                "startDate" : "2017-01-01T14:00:00",
+                "endDate"   : "2017-01-01T16:00:00",
+                "eventColor" : "purple",
+                "num": 10,
+                "object": {
+                    "2017-01-01 14:00":100,
+                    "2017-01-01 15:00":200
+                }
+            },
+            {
+                "resourceId": "r4",
+                "startDate" : "2017-01-01T08:00:00",
+                "endDate"   : "2017-01-01T11:00:00",
+                "eventStyle": "colored",
+                "eventColor" : "violet",
+                "num": 10,
+                "object": {
+                    "2017-01-01 08:00":100,
+                    "2017-01-01 09:00":200,
+                    "2017-01-01 10:00":300
+                }
+            },
+            {
+                "resourceId": "r5",
+                "startDate" : "2017-01-01T15:00:00",
+                "endDate"   : "2017-01-01T17:00:00",
+                "eventColor" : "indigo",
+                "num": 10,
+                "object": {
+                    "2017-01-01 15:00":100,
+                    "2017-01-01 16:00":200
+                }
+            },
+            {
+                "resourceId": "r6",
+                "startDate" : "2017-01-01T16:00:00",
+                "endDate"   : "2017-01-01T18:00:00",
+                "eventColor" : "blue",
+                "num": 10,
+                "object": {
+                    "2017-01-01 16:00":100,
+                    "2017-01-01 17:00":200
+                }
+            },
+            {
+                "resourceId": "r7",
+                "startDate" : "2017-01-01T6:00:00",
+                "endDate"   : "2017-01-01T8:00:00",
+                "eventColor" : "cyan",
+                "eventStyle" : "colored",
+                "num": 10,
+                "object": {
+                    "2017-01-01 06:00":100,
+                    "2017-01-01 07:00":200
+                }
+            },
+            {
+                "resourceId": "r8",
+                "startDate" : "2017-01-01T9:00:00",
+                "endDate"   : "2017-01-01T10:00:00",
+                "eventColor" : "teal",
+                "eventStyle": "colored",
+                "num": 10,
+                "object": {
+                    "2017-01-01 09:00":100
+                }
+            },
+            {
+                "resourceId": "r9",
+                "startDate" : "2017-01-01T12:00:00",
+                "endDate"   : "2017-01-01T13:00:00",
+                "eventColor" : "green",
+                "num": 10,
+                "object": {
+                    "2017-01-01 12:00":100
+                }
+            },
+            {
+                "resourceId": "r10",
+                "startDate" : "2017-01-01T14:00:00",
+                "endDate"   : "2017-01-01T16:00:00",
+                "eventColor" : "colored",
+                "num": 10,
+                "object": {
+                    "2017-01-01 14:00":100,
+                    "2017-01-01 15:00":200
+                }
+            },
+            {
+                "resourceId": "r11",
+                "startDate" : "2017-01-01T08:00:00",
+                "endDate"   : "2017-01-01T11:00:00",
+                "eventStyle": "colored",
+                "eventColor" : "yellow",
+                "num": 10,
+                "object": {
+                    "2017-01-01 08:00":100,
+                    "2017-01-01 09:00":200,
+                    "2017-01-01 10:00":300
+                }
+            },
+            {
+                "resourceId": "r12",
+                "startDate" : "2017-01-01T15:00:00",
+                "endDate"   : "2017-01-01T17:00:00",
+                "eventColor" : "orange",
+                "num": 10,
+                "object": {
+                    "2017-01-01 15:00":100,
+                    "2017-01-01 16:00":200
+                }
+            }
+        ]
+    },
+    "timeRanges"    : {
+        "rows": [
+            {
+                "name"     : "Morning coffee",
+                "cls"      : "coffee",
+                "startDate": "2017-01-01T08:00:00",
+                "endDate"  : "2017-01-01T09:00:00"
+            },
+            {
+                "id"       : "lunch",
+                "cls"      : "lunch b-fa b-fa-utensils",
+                "name"     : "Lunch o´ clock",
+                "startDate": "2017-01-01T11:00:00",
+                "endDate"  : "2017-01-01T12:00:00"
+            },
+            {
+                "name"     : "Important time",
+                "startDate": "2017-01-01 13:30"
+            },
+            {
+                "name"     : "Fika",
+                "cls"      : "fika",
+                "startDate": "2017-01-01 14:30",
+                "endDate"  : "2017-01-01 15:00"
+            },
+            {
+                "name"     : "Custom style",
+                "startDate": "2017-01-01 17:00",
+                "endDate"  : "2017-01-01 18:00",
+                "style"    : "background : repeating-linear-gradient(45deg, rgba(155,155,155,0.5), rgba(155,155,155,0.5) 8px, transparent 8px, transparent 16px);color: #666"
+            }
+        ]
+    }
+}

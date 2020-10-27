@@ -1,0 +1,268 @@
+/**
+ *- Application global styles (compiled from existing files)
+ */
+@font-face {
+    font-family : "Source Sans Pro";
+    src         : url("assets/SourceSansPro-Regular.ttf.woff2") format("woff2"), url("assets/SourceSansPro-Regular.ttf.woff") format("woff");
+    font-weight : 400;
+}
+
+html, body, #app {
+    height : 100%;
+}
+
+body {
+    visibility  : unset;
+    font-family : "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+    font-size   : 15px;
+    margin      : 0;
+}
+
+#app {
+    display        : flex;
+    flex-direction : column;
+}
+
+.home {
+    display: flex;
+    flex: 1 1 0px;
+}
+
+.b-schedulerpro-container {
+    width:100%;
+}
+
+// COLORS
+.red {
+    background-color : #F44336;
+    border-color     : #F44336;
+}
+
+.green {
+    background-color : #66BB6A;
+    border-color     : #66BB6A;
+}
+
+.orange {
+    background-color : #FFA726;
+    border-color     : #FFA726;
+}
+
+.teal {
+    background-color : #26A69A;
+    border-color     : #26A69A;
+}
+
+.light-green {
+    background-color : #9CCC65;
+    border-color     : #9CCC65;
+}
+
+.lime {
+    background-color : #D4E157;
+    border           : #D4E157;
+}
+
+.blue {
+    background-color : #42A5F5;
+    border           : #42A5F5;
+}
+
+.purple {
+    background-color : #9575CD;
+    border           : #9575CD;
+}
+
+.cyan {
+    background-color : #26C6DA;
+    border           : #26C6DA;
+}
+
+// EMPLOYEE
+// Employee row, fill it and put it in front of column lines
+.b-tree-parent-row {
+    background-color : #f9f9f9 !important; // Override complex selector used for selected row styling in timeline view
+    z-index          : 1;
+    border-bottom    : 1px solid #bdbdbd;
+}
+
+.b-theme-dark {
+    .b-tree-parent-row {
+        background-color : #333 !important; // See above;
+        border-bottom    : 1px solid #222;
+    }
+}
+
+.b-theme-light {
+    .b-tree-parent-row {
+        background-color : #fefefe;
+        border-bottom    : 1px solid #ddd;
+    }
+}
+
+.b-theme-material {
+    .b-tree-parent-row {
+        border-bottom : 1px solid #e0e0e0;
+    }
+}
+
+// Parent cells contains employee info, use flex layout within
+.b-tree-parent-cell .b-tree-cell-value {
+    align-items : center;
+
+    // Employee info : name & title, shown in vertical column
+    .info {
+        display         : flex;
+        flex-direction  : column;
+        justify-content : center;
+
+        flex            : 1;
+
+        .name {
+            font-weight : 400;
+        }
+
+        .title {
+            color     : #888;
+            font-size : .8em;
+        }
+    }
+
+    // Add client button, shown per employee
+    .add {
+        display          : flex;
+        flex-direction   : column;
+        justify-content  : center;
+        text-align       : center;
+
+        background-color : transparent;
+        color            : #888;
+
+        border-radius    : 50%;
+        width            : 1em;
+        height           : 1em;
+        margin-right     : 1em;
+
+        cursor           : pointer;
+
+        transition       : all .3s;
+
+        &:hover {
+            background-color : #888;
+            color            : #fff;
+            width            : 2em;
+            height           : 2em;
+            margin-right     : .5em;
+            transition       : all .3s;
+        }
+    }
+
+    // Employee image, shown as circle
+    .profile-img {
+        border-radius : 50%;
+        width         : 3em;
+        height        : 3em;
+    }
+}
+
+// Events on employee rows, shown as "--- Event ---"
+.b-sch-event-wrap.b-sch-event-parent {
+    height       : 0 !important;
+    border-width : 2px;
+    border-style : solid;
+    margin-top   : 23px;
+
+    .b-sch-event {
+        background-color : #f9f9f9;
+        color            : #000;
+        justify-content  : center;
+        overflow         : visible;
+        flex             : none;
+        width            : auto;
+        padding          : 0.5em 1em;
+    }
+}
+
+.b-theme-dark {
+    .b-sch-event-wrap.b-sch-event-parent .b-sch-event {
+        background-color : #333;
+        color            : #fff;
+    }
+}
+
+.b-theme-light {
+    .b-sch-event-wrap.b-sch-event-parent .b-sch-event {
+        background-color : #fefefe;
+    }
+}
+
+// CLIENTS
+
+// Circle with clients assigned color
+.client-color {
+    width         : .9em;
+    height        : .9em;
+    border-radius : 50%;
+    margin-left   : .3em;
+    margin-right  : .5em;
+    position      : relative;
+    top           : .2em;
+}
+
+// Client cell, override padding added by tree to mimic look of groups instead
+.b-tree-leaf-cell .b-tree-cell-inner {
+    padding-left : 0.5em !important;
+}
+
+// Client events
+.b-sch-event-wrap {
+    border-radius : 4px;
+}
+
+// Client events
+.b-sch-event {
+    border-radius    : 4px;
+    font-weight      : 400;
+    background-color : rgba(255, 255, 255, 0);
+    transition       : background-color .2s;
+    color            : #fff;
+
+    span {
+        font-weight : 300;
+    }
+
+    &:hover {
+        background-color : rgba(255, 255, 255, 0.1);
+    }
+}
+
+// Make weekends have a very bright slightly red background
+.b-grid-subgrid .b-sch-range {
+    background-color : rgba(250, 240, 240, 0.2);
+}
+
+.b-theme-dark {
+    .b-grid-subgrid .b-sch-range {
+        background-color : rgba(50, 40, 40, 0.2)
+    }
+}
+
+// EVENT EDITOR
+.color-item {
+    width         : .9em;
+    height        : .9em;
+    border-radius : 50%;
+    margin-right  : .5em;
+    position      : relative;
+    top           : .2em;
+}
+
+// CLIENT EDITOR
+.client-editor {
+    .b-popup-content {
+        padding : 1em;
+    }
+}
+ 
+
+// eof

@@ -1,0 +1,45 @@
+{
+  "name": "advanced",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "builder": "node ../../../_shared/scripts/build.js",
+    "guide": "npm run builder guide scheduler vue",
+    "serve": "vue-cli-service serve --mode=development",
+    "build": "vue-cli-service build --mode=development || npm run guide",
+    "lint": "vue-cli-service lint",
+    "postinstall": "postinstall || npm run guide"
+  },
+  "postinstall": {
+    "node_modules/bryntum-resources/images/favicon.png": "copy public/favicon.png",
+    "node_modules/bryntum-resources/images/users": "copy public/users"
+  },
+  "dependencies": {
+    "bootstrap": "~4.3.1",
+    "bryntum-resources": "file:../../../_shared",
+    "bryntum-schedulerpro": "file:../../../../build",
+    "bryntum-vue-shared": "file:../_shared",
+    "core-js": "~3.6.4",
+    "vue": "~2.6.10",
+    "vue-router": "~3.0.1",
+    "vuex": "~3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~3.5.0",
+    "@vue/cli-plugin-eslint": "~3.5.0",
+    "@vue/cli-service": "~3.5.0",
+    "@vue/eslint-config-standard": "~4.0.0",
+    "babel-eslint": "~10.0.1",
+    "eslint": "~5.8.0",
+    "eslint-config-standard": "~12.0.0",
+    "eslint-plugin-import": "~2.17.3",
+    "eslint-plugin-node": "~9.1.0",
+    "eslint-plugin-promise": "~4.1.1",
+    "eslint-plugin-standard": "~4.0.0",
+    "eslint-plugin-vue": "~5.0.0",
+    "node-sass": "~4.9.0",
+    "postinstall": "~0.4.2",
+    "sass-loader": "~7.1.0",
+    "vue-template-compiler": "~2.6.10"
+  }
+}

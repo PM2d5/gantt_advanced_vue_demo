@@ -1,0 +1,9 @@
+@media print {
+    @page {
+        size : auto;
+    }
+
+    body {
+        min-width: auto !important;
+    }
+}

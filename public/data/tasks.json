@@ -1,0 +1,250 @@
+{
+    "success"  : true,
+    "resources": {
+        "rows": [
+            {
+                "id"      : 1,
+                "name"    : "Celia",
+                "title"   : "Sales",
+                "expanded": true,
+                "clients" : [
+                    {"id": 11, "name": "Fancy law firm", "color": "teal"},
+                    {"id": 12, "name": "Small boutique", "color": "blue"},
+                    {"id": 13, "name": "Grocery store", "color": "lime"}
+                ]
+            },
+            {
+                "id"      : 2,
+                "name"    : "Emilia",
+                "title"   : "Marketing",
+                "expanded": true,
+                "clients" : [
+                    {"id": 21, "name": "Big clothing company", "color": "light-green"},
+                    {"id": 22, "name": "Up and coming corp", "color": "purple"},
+                    {"id": 23, "name": "Creative collective", "color": "cyan"}
+                ]
+            },
+            {
+                "id"      : 3,
+                "name"    : "Gloria",
+                "title"   : "Marketing",
+                "expanded": true,
+                "clients" : [
+                    {"id": 31, "name": "Mad scientists", "color": "blue"},
+                    {"id": 32, "name": "Traditional service org", "color": "teal"}
+                ]
+            },
+            {
+                "id"      : 4,
+                "name"    : "Lola",
+                "title"   : "Management",
+                "expanded": true,
+                "clients" : [
+                    {"id": 41, "name": "State of the art lab", "color": "purple"},
+                    {"id": 42, "name": "Back alley club", "color": "light-green"}
+                ]
+            }
+        ]
+    },
+    "events"   : {
+        "rows": [
+            {
+                "resourceId": 1,
+                "startDate" : "2018-05-07",
+                "endDate"   : "2018-05-09",
+                "type"      : "employee",
+                "color"     : "red",
+                "name"      : "Busy"
+            },
+            {
+                "resourceId": 11,
+                "startDate" : "2018-05-07",
+                "endDate"   : "2018-05-09",
+                "type"      : "client",
+                "name"      : "Meeting",
+                "location"  : "clients office"
+            },
+            {
+                "resourceId": 12,
+                "startDate" : "2018-05-07",
+                "endDate"   : "2018-05-08",
+                "type"      : "client",
+                "name"      : "Phone",
+                "location"  : "office"
+            },
+            {
+                "resourceId": 13,
+                "startDate" : "2018-05-09",
+                "endDate"   : "2018-05-11",
+                "type"      : "client",
+                "name"      : "Suggested meeting"
+            },
+            {
+                "resourceId": 1,
+                "startDate" : "2018-05-14",
+                "endDate"   : "2018-05-19",
+                "type"      : "employee",
+                "color"     : "orange",
+                "name"      : "Out of office"
+            },
+            {
+                "resourceId": 11,
+                "startDate" : "2018-05-14",
+                "endDate"   : "2018-05-19",
+                "type"      : "client",
+                "name"      : "Conference",
+                "location"  : "fancy venue"
+            },
+            {
+                "resourceId": 13,
+                "startDate" : "2018-05-21",
+                "endDate"   : "2018-05-23",
+                "type"      : "client",
+                "name"      : "Follow up",
+                "location"  : "office"
+            },
+            {
+                "resourceId": 12,
+                "startDate" : "2018-05-23",
+                "endDate"   : "2018-05-26",
+                "type"      : "client",
+                "name"      : "Meeting",
+                "location"  : "clients office"
+            },
+            {
+                "resourceId": 2,
+                "startDate" : "2018-05-08",
+                "endDate"   : "2018-05-12",
+                "type"      : "employee",
+                "color"     : "orange",
+                "name"      : "Campaign management course"
+            },
+            {
+                "resourceId": 21,
+                "startDate" : "2018-05-07",
+                "endDate"   : "2018-05-08",
+                "type"      : "client",
+                "name"      : "Intro",
+                "location"  : "@client"
+            },
+            {
+                "resourceId": 22,
+                "startDate" : "2018-05-14",
+                "endDate"   : "2018-05-16",
+                "type"      : "client",
+                "name"      : "Meeting",
+                "location"  : "trendy venue"
+            },
+            {
+                "resourceId": 21,
+                "startDate" : "2018-05-16",
+                "endDate"   : "2018-05-23",
+                "type"      : "client",
+                "name"      : "New campaign",
+                "location"  : "flagship store"
+            },
+            {
+                "resourceId": 2,
+                "startDate" : "2018-05-23",
+                "endDate"   : "2018-05-26",
+                "type"      : "employee",
+                "color"     : "red",
+                "name"      : "Vacation"
+            },
+            {
+                "resourceId": 23,
+                "startDate" : "2018-05-11",
+                "endDate"   : "2018-05-12",
+                "type"      : "client",
+                "name"      : "Phone",
+                "location"  : "office"
+            },
+            {
+                "resourceId"  : 31,
+                "startDate"   : "2018-05-08",
+                "duration"    : 1,
+                "durationUnit": "day",
+                "type"        : "client",
+                "name"        : "Meeting"
+            },
+            {
+                "resourceId"  : 31,
+                "startDate"   : "2018-05-10",
+                "duration"    : 1,
+                "durationUnit": "day",
+                "type"        : "client",
+                "name"        : "Meeting"
+            },
+            {
+                "resourceId"  : 32,
+                "startDate"   : "2018-05-07",
+                "duration"    : 1,
+                "durationUnit": "day",
+                "type"        : "client",
+                "name"        : "Meeting"
+            },
+            {
+                "resourceId"  : 32,
+                "startDate"   : "2018-05-09",
+                "duration"    : 1,
+                "durationUnit": "day",
+                "type"        : "client",
+                "name"        : "Meeting"
+            },
+            {
+                "resourceId"  : 3,
+                "startDate"   : "2018-05-11",
+                "duration"    : 4,
+                "durationUnit": "day",
+                "type"        : "employee",
+                "name"        : "Getting married!",
+                "color"       : "purple"
+            },
+            {
+                "resourceId"  : 31,
+                "startDate"   : "2018-05-15",
+                "duration"    : 4,
+                "durationUnit": "day",
+                "type"        : "client",
+                "name"        : "Conference",
+                "location"    : "science fair"
+            },
+            {
+                "resourceId"  : 32,
+                "startDate"   : "2018-05-21",
+                "duration"    : 3,
+                "durationUnit": "day",
+                "type"        : "client",
+                "name"        : "Create campaign",
+                "location"    : "office"
+            },
+            {
+                "resourceId"  : 41,
+                "startDate"   : "2018-05-08",
+                "duration"    : 4,
+                "durationUnit": "day",
+                "type"        : "client",
+                "name"        : "Research new marketing strategies",
+                "location"    : "underground lab"
+            },
+            {
+                "resourceId"  : 42,
+                "startDate"   : "2018-05-14",
+                "duration"    : 2,
+                "durationUnit": "day",
+                "type"        : "client",
+                "name"        : "\"Marketing\" meeting",
+                "location"    : "@club"
+            },
+            {
+                "resourceId"  : 4,
+                "startDate"   : "2018-05-16",
+                "duration"    : 5,
+                "durationUnit": "day",
+                "type"        : "employee",
+                "name"        : "Important golf tournament",
+                "color"       : "green"
+            }
+        ]
+    }
+}
